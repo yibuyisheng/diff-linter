@@ -1,0 +1,25 @@
+{
+  "name": "diff-linter",
+  "version": "0.0.1",
+  "description": "Run lint tools for git diffs.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yibuyisheng/diff-linter.git"
+  },
+  "keywords": [
+    "lint"
+  ],
+  "author": "yibuyisheng@yibuyisheng.synology.me,y.mingshan3@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yibuyisheng/diff-linter/issues"
+  },
+  "homepage": "https://github.com/yibuyisheng/diff-linter#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
