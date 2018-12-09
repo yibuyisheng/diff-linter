@@ -1,7 +1,7 @@
 {
-  "name": "diff-linter",
+  "name": "[project name]",
   "version": "0.0.1",
-  "description": "Run lint tools for git diffs.",
+  "description": "description",
   "main": "lib/index.js",
   "jsnext:main": "es/index.js",
   "module": "es/index.js",
@@ -15,20 +15,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yibuyisheng/diff-linter.git"
+    "url": "[git repo url]"
   },
-  "keywords": [
-    "lint"
-  ],
-  "author": "yibuyisheng@yibuyisheng.synology.me,y.mingshan3@gmail.com",
+  "keywords": [],
+  "author": "yibuyisheng@163.com",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yibuyisheng/diff-linter/issues"
-  },
-  "homepage": "https://github.com/yibuyisheng/diff-linter#readme",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org"
-  },
   "devDependencies": {
     "@ali/ci": "^4.6.1",
     "@types/jest": "^23.3.2",
@@ -39,6 +30,12 @@
     "tslint": "^5.11.0",
     "tslint-config-airbnb": "^5.11.0",
     "typescript": "^3.1.4"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "ci": {
+    "type": "gitlab"
   },
   "types": "./types/index.d.ts",
   "sideEffects": false
