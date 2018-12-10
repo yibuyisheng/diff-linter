@@ -10,8 +10,8 @@
     "dev": "jest --debug --watch",
     "build": "rm -rf ./types && rm -rf ./lib && rm -rf es && tsc --build tsconfig.es.json && tsc --build tsconfig.commonjs.json",
     "lint": "tslint ./src/** --project tsconfig.es.json",
-    "prepublish": "tnpm run test && tnpm run lint && tnpm run build",
-    "ci": "tnpm run lint && tnpm run test"
+    "prepublish": "npm run test && npm run lint && npm run build",
+    "ci": "npm run lint && npm run test"
   },
   "repository": {
     "type": "git",
@@ -30,16 +30,20 @@
     "registry": "https://registry.npmjs.org"
   },
   "devDependencies": {
-    "@ali/ci": "^4.6.1",
     "@types/jest": "^23.3.2",
-    "@types/lodash": "^4.14.117",
+    "@types/lodash": "^4.14.118",
     "jest": "^23.6.0",
     "lodash": "^4.17.11",
+    "simple-git": "^1.107.0",
     "ts-jest": "^23.10.2",
+    "ts-node": "^7.0.1",
     "tslint": "^5.11.0",
     "tslint-config-airbnb": "^5.11.0",
-    "typescript": "^3.1.4"
+    "typescript": "^3.2.2"
   },
   "types": "./types/index.d.ts",
-  "sideEffects": false
+  "sideEffects": false,
+  "dependencies": {
+    "@types/node": "^10.12.12"
+  }
 }
